@@ -16,6 +16,8 @@
 </head>
 <body>
 
+<a class="skip" href="#prodotti">Salta al contenuto</a>
+
 <button id="theme" type="button" aria-label="Cambia tema chiaro/scuro">◐</button>
 
 <header class="hero">
@@ -56,14 +58,16 @@
         <h3><a href="https://marketplace.atlassian.com/apps/445718103/permission-review-for-jira" rel="noopener">Permission Review for Jira</a></h3>
         <p class="punch">Gli strumenti di audit esistenti elencano i permessi. Questo dice <strong>quali li ha decisi davvero una persona</strong> — due su 232, non gli altri 230.</p>
         <p>App Forge con Custom UI e resolver: attraversa la gerarchia di progetti e schemi di permessi, produce un report unico ed esporta in Excel per il revisore esterno. Primo risultato nella ricerca del Marketplace per il proprio nome, su oltre mille app.</p>
+        <p class="go"><a href="https://marketplace.atlassian.com/apps/445718103/permission-review-for-jira" rel="noopener">Apri sull'Atlassian Marketplace</a></p>
         <div class="tags"><span class="tag">Atlassian Forge</span><span class="tag">Custom UI</span><span class="tag">JavaScript</span><span class="tag">exceljs</span></div>
       </article>
 
       <article class="card">
         <span class="status">Atlassian Marketplace · 7 set 2026</span>
-        <h3>Mermaid SVG Diagrams — Dark Mode &amp; Zoom for Confluence</h3>
+        <h3><a href="https://marketplace.atlassian.com/apps/2270875170/mermaid-svg-diagrams-dark-mode-zoom-for-confluence" rel="noopener">Mermaid SVG Diagrams — Dark Mode &amp; Zoom for Confluence</a></h3>
         <p class="punch">La specifica non l'ho inventata: era scritta nelle recensioni a 1-2 stelle dei concorrenti. <em>«Tiny and blurry, and therefore useless.»</em></p>
         <p>Macro che rende i diagrammi Mermaid in <strong>SVG vettoriale</strong> invece che in PNG: larghezza naturale, barra di zoom, schermo intero, sfondo trasparente e tema scuro. Circa un secondo dal testo al diagramma.</p>
+        <p class="go"><a href="https://marketplace.atlassian.com/apps/2270875170/mermaid-svg-diagrams-dark-mode-zoom-for-confluence" rel="noopener">Apri sull'Atlassian Marketplace</a><a href="#prova-mermaid">Provalo qui sotto</a></p>
         <div class="tags"><span class="tag">Atlassian Forge</span><span class="tag">Mermaid.js</span><span class="tag">SVG</span><span class="tag">8.500 righe</span></div>
       </article>
 
@@ -72,33 +76,66 @@
         <h3>Faro — piattaforma di assistenza tecnica</h3>
         <p class="punch">Web app multi-tenant e mobile-first per una catena di punti vendita. Il cuore è il <strong>loop di deflection</strong>: si parte dal sintomo, non dal menu; si segue una guida a passi con foto e video; il ticket si apre solo se l'autonomia non basta — e la dashboard misura i <strong>ticket evitati</strong>.</p>
         <p>Permessi per-utente con ruolo derivato e cascata, ambito per unità, registro eventi append-only, upload e ridimensionamento delle foto lato browser, deduplica della knowledge base assistita dall'AI e bozze delle guide scritte dall'AI a partire da testo libero. Regola di progetto non negoziabile: <strong>l'AI propone, l'app funziona anche se l'AI non risponde.</strong></p>
+        <p class="go"><span class="private">Progetto su commessa: codice e istanza privati</span></p>
         <div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">PWA</span><span class="tag">Supabase</span><span class="tag">PostgreSQL + RLS</span><span class="tag">pgvector</span><span class="tag">Claude API</span><span class="tag">Vercel</span><span class="tag">25.500 righe · 227 file</span></div>
       </article>
 
       <article class="card">
         <span class="status">Chrome Web Store</span>
-        <h3>PromptVault</h3>
+        <h3><a href="https://chromewebstore.google.com/detail/jmfgkfikepfdpgcnnomngabklfihamic" rel="noopener">PromptVault</a></h3>
         <p class="punch">Gestore di prompt che si innesta su dieci siti di AI generativa — e, sotto, <strong>una filiera a pagamento completa</strong>.</p>
         <p>Autenticazione OAuth con <code>chrome.identity.launchWebAuthFlow</code>, abbonamenti Lemon Squeezy in <em>live mode</em>, webhook firmati verso una Supabase Edge Function, piani con quota. Compresa la correzione della <em>race condition</em> fra gli eventi <code>subscription_updated</code> e <code>subscription_expired</code>. Acquisto e rimborso reali collaudati end-to-end.</p>
+        <p class="go"><a href="https://chromewebstore.google.com/detail/jmfgkfikepfdpgcnnomngabklfihamic" rel="noopener">Apri sul Chrome Web Store</a><a href="https://mypromptsvault.com" rel="noopener">mypromptsvault.com</a></p>
         <div class="tags"><span class="tag">Manifest V3</span><span class="tag">Supabase</span><span class="tag">Edge Functions</span><span class="tag">Lemon Squeezy</span><span class="tag">OAuth 2.0</span></div>
       </article>
 
       <article class="card">
         <span class="status">Apify Store · pubblico</span>
-        <h3>Job Scraper — Greenhouse, Lever, Ashby, Workday</h3>
+        <h3><a href="https://apify.com/softyways/greenhouse-lever-ashby-workday-job-scraper" rel="noopener">Job Scraper — Greenhouse, Lever, Ashby, Workday</a></h3>
         <p class="punch">745 annunci in <strong>tre secondi</strong>: legge gli endpoint JSON pubblici di 7 applicant tracking system, senza browser, senza proxy, senza aggirare protezioni.</p>
         <p>Ogni riga porta un <code>changeType</code> calcolato contro la corsa precedente. Il valore vero sta nei guasti: una career page in errore non viene <strong>mai</strong> riportata come «tutto rimosso» — una rimozione falsa farebbe chiudere posizioni ancora aperte. Se il tetto di spesa si esaurisce, le righe non pagate non vengono segnate come viste, così la corsa dopo le ritrova invece di perderle per sempre.</p>
+        <p class="go"><a href="https://apify.com/softyways/greenhouse-lever-ashby-workday-job-scraper" rel="noopener">Apri sull'Apify Store</a></p>
         <div class="tags"><span class="tag">Node.js</span><span class="tag">Apify SDK</span><span class="tag">key-value store</span><span class="tag">1,50 $/1.000</span></div>
       </article>
 
       <article class="card wide">
         <span class="status">smallaihub.com · in produzione</span>
-        <h3>Small AI Hub</h3>
+        <h3><a href="https://smallaihub.com" rel="noopener">Small AI Hub</a></h3>
         <p class="punch">Blog SEO in inglese US con dominio, SSL, GA4, Search Console e sitemap — e una <strong>redazione automatica</strong> dietro.</p>
         <p>Le pagine articolo sono pre-renderizzate staticamente da un generatore Python a partire da un unico <code>articles.json</code>, con redirect 308 dai vecchi URL in query string: è la modifica che ha risolto l'indicizzazione. Un agente scrive una bozza al giorno; io la pubblico o la scarto <strong>da un pulsante dentro l'email</strong>, servito da funzioni serverless.</p>
+        <p class="go"><a href="https://smallaihub.com" rel="noopener">Apri smallaihub.com</a></p>
         <div class="tags"><span class="tag">Python</span><span class="tag">generatore statico</span><span class="tag">Vercel serverless</span><span class="tag">SEO tecnica</span><span class="tag">24 articoli</span></div>
       </article>
 
+    </div>
+  </div>
+</section>
+
+<section id="prova-mermaid">
+  <div class="wrap">
+    <h2>Provalo: il motore di Mermaid SVG, qui dentro</h2>
+    <p class="section-note">Scrivi a sinistra, il diagramma compare a destra. È lo stesso principio dell'app pubblicata sul Marketplace: <strong>SVG vettoriale</strong>, non un'immagine. Ingrandisci la pagina quanto vuoi — non sgrana, perché non ci sono pixel.</p>
+
+    <div class="demo">
+      <div class="demo-bar" role="group" aria-label="Diagrammi di esempio">
+        <button type="button" class="chip" data-ex="flow">Flusso</button>
+        <button type="button" class="chip" data-ex="seq">Sequenza</button>
+        <button type="button" class="chip" data-ex="state">Stati</button>
+        <button type="button" class="chip" data-ex="err">Con un errore</button>
+      </div>
+
+      <div class="demo-grid">
+        <div class="demo-pane">
+          <label class="demo-label" for="mmd">Testo Mermaid</label>
+          <textarea id="mmd" spellcheck="false" aria-describedby="mmd-hint"></textarea>
+          <p class="demo-hint" id="mmd-hint">Modificalo pure: il diagramma si ridisegna mentre scrivi.</p>
+        </div>
+        <div class="demo-pane">
+          <span class="demo-label" id="out-label">Risultato</span>
+          <div id="mmd-out" class="demo-out" role="img" aria-labelledby="out-label" aria-live="polite"><p class="demo-idle">Il motore si carica al primo clic o appena arrivi qui.</p></div>
+          <p class="demo-hint" id="mmd-meta"></p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -116,6 +153,7 @@
         <p class="punch"><strong>38.225 partite</strong> di cinque campionati europei dal 2005, le quote reali di ~15 bookmaker, <strong>19 strategie</strong> (due delle quali di controllo) e <strong>291.248 scommesse simulate</strong>.</p>
         <p>Rating Elo e Dixon-Coles ricostruiti online, settimana per settimana. Stagioni divise in taratura, validazione e <strong>holdout guardato una volta sola</strong>. Un test automatico riscrive i risultati dell'ultimo terzo delle partite e verifica che <strong>nessuna feature passata si muova</strong>: la contaminazione è impedita dalla struttura, non da un commento. Le quote di chiusura sono irraggiungibili dalle strategie per costruzione, e servono solo a giudicare dopo. Correzione di Benjamini-Hochberg sul confronto multiplo.</p>
         <p class="punch">Il risultato è <strong>negativo</strong>, ed è scritto in grassetto nella documentazione: nessuna delle 19 strategie supera i controlli. I tre motori che vincono più spesso — fino al <strong>90,7% di giocate vinte</strong> — perdono tutti soldi. Non esiste una scommessa facile: esiste una scommessa pagata male. <em>Un motore che ti dice di no è più utile di uno che ti dice quello che vuoi sentire.</em></p>
+        <p class="go"><span class="private">Codice privato — volentieri ne parlo in dettaglio</span></p>
         <div class="tags"><span class="tag">Python</span><span class="tag">NumPy / SciPy</span><span class="tag">Elo</span><span class="tag">Dixon-Coles</span><span class="tag">test anti-leakage</span><span class="tag">Benjamini-Hochberg</span></div>
       </article>
 
@@ -125,6 +163,7 @@
         <p class="punch">Il mio prodotto su Apify aveva il monitoraggio verde. Un giorno ho misurato come finivano le esecuzioni <em>degli altri</em>: <strong>1 riuscita, 6 andate in timeout</strong>. Sei persone avevano pagato il tempo di calcolo per non ricevere nulla, e nessun allarme era mai scattato.</p>
         <p>Il watchdog ricava le esecuzioni di terzi dalla differenza fra statistiche pubbliche e autenticate, e <strong>fissa i contatori quando cambia la build viva</strong>: una finestra a 30 giorni continuerebbe per settimane a dare la colpa alla build nuova per guasti già corretti — e nel frattempo un guasto vero sarebbe invisibile, perché l'allarme è già rosso.</p>
         <p>Il verdetto che conta non è «esecuzione fallita» ma <code>thin</code>: corsa riuscita che ha prodotto molto meno del solito. È l'aspetto che ha <strong>un portale rotto in silenzio</strong>, e un allarme sul solo fallimento non lo vede mai.</p>
+        <p class="go"><span class="private">Strumento interno, non pubblicato</span></p>
         <div class="tags"><span class="tag">Node.js</span><span class="tag">Apify SDK</span><span class="tag">alerting</span><span class="tag">osservabilità</span></div>
       </article>
 
@@ -200,7 +239,114 @@
     var next = cur === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
+    document.dispatchEvent(new CustomEvent('temacambiato'));
   });
+})();
+</script>
+
+<script type="module">
+/* Prova Mermaid — la libreria si scarica solo quando serve davvero. */
+(function () {
+  var ta = document.getElementById('mmd');
+  var out = document.getElementById('mmd-out');
+  var meta = document.getElementById('mmd-meta');
+  var bar = document.querySelector('.demo-bar');
+  if (!ta || !out) return;
+
+  var ESEMPI = {
+    flow: 'flowchart LR\n  A[Richiesta] --> B{Cache?}\n  B -- sì --> C[Rispondi subito]\n  B -- no --> D[Interroga l\'API]\n  D --> E{Ha risposto?}\n  E -- sì --> F[Salva e rispondi]\n  E -- no --> G[Tieni il dato vecchio]\n  G --> H[Non dire mai «rimosso»]',
+    seq: 'sequenceDiagram\n  participant U as Utente\n  participant A as App\n  participant S as API di terzi\n  U->>A: Apri il report\n  A->>S: GET /permessi\n  S-->>A: 429 Too Many Requests\n  A-->>U: Mostra i dati dell\'ultima volta\n  Note over A: Mai una pagina vuota',
+    state: 'stateDiagram-v2\n  [*] --> InAttesa\n  InAttesa --> InCorso: avvio\n  InCorso --> Riuscito: dati completi\n  InCorso --> Scarno: molte meno righe\n  InCorso --> Fallito: errore\n  Scarno --> [*]: avvisa comunque\n  Riuscito --> [*]\n  Fallito --> [*]',
+    err: 'flowchart LR\n  A[Questo diagramma --> B\n  B --> C'
+  };
+
+  var mermaid = null, caricamento = null, timer = null, ultimo = '', n = 0;
+
+  function scuro() {
+    var t = document.documentElement.getAttribute('data-theme');
+    if (t) return t === 'dark';
+    return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  }
+
+  function carica() {
+    if (mermaid) return Promise.resolve(mermaid);
+    if (caricamento) return caricamento;
+    out.innerHTML = '<p class="demo-idle">Carico il motore…</p>';
+    caricamento = import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs')
+      .then(function (m) { mermaid = m.default; return mermaid; })
+      .catch(function (e) {
+        caricamento = null;
+        out.innerHTML = '<p class="demo-idle">Non sono riuscito a caricare il motore. Serve una connessione: il diagramma si disegna nel tuo browser, non su un server.</p>';
+        throw e;
+      });
+    return caricamento;
+  }
+
+  function disegna() {
+    var testo = ta.value.trim();
+    if (!testo) {
+      out.innerHTML = '<p class="demo-idle">Scrivi qualcosa a sinistra.</p>';
+      meta.textContent = '';
+      return;
+    }
+    carica().then(function (mm) {
+      mm.initialize({ startOnLoad: false, theme: scuro() ? 'dark' : 'default', securityLevel: 'strict', fontFamily: 'ui-sans-serif, system-ui, sans-serif' });
+      return mm.render('mmd-svg-' + (++n), testo);
+    }).then(function (res) {
+      out.innerHTML = res.svg;
+      var svg = out.querySelector('svg');
+      if (svg) {
+        svg.removeAttribute('width');
+        svg.style.maxWidth = '100%';
+        meta.textContent = 'Elemento <svg> vero, ' + svg.querySelectorAll('*').length + ' nodi. Nessuna immagine raster.';
+      }
+    }).catch(function (e) {
+      var msg = (e && e.message ? e.message : String(e)).split('\n').slice(0, 4).join('\n');
+      out.innerHTML = '<p class="demo-err"><b>Il diagramma non si legge</b>' + msg.replace(/[<>&]/g, function (c) { return { '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]; }) + '</p>';
+      meta.textContent = 'Un errore di sintassi non deve rompere la pagina: mostra cosa non va e si aspetta la correzione.';
+    });
+  }
+
+  function programma() {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      if (ta.value === ultimo) return;
+      ultimo = ta.value;
+      disegna();
+    }, 350);
+  }
+
+  bar.addEventListener('click', function (ev) {
+    var b = ev.target.closest('.chip');
+    if (!b) return;
+    bar.querySelectorAll('.chip').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+    ta.value = ESEMPI[b.dataset.ex] || '';
+    ultimo = ta.value;
+    disegna();
+  });
+
+  ta.addEventListener('input', programma);
+  document.addEventListener('temacambiato', function () { if (mermaid) { ultimo = ''; disegna(); } });
+
+  ta.value = ESEMPI.flow;
+  bar.querySelector('.chip[data-ex="flow"]').setAttribute('aria-pressed', 'true');
+
+  var avviato = false;
+  function avvia() { if (avviato) return; avviato = true; ultimo = ta.value; disegna(); }
+
+  /* Tre inneschi indipendenti: se l'osservatore non scatta (succede dentro
+     certi contenitori), basta toccare il riquadro perché parta lo stesso. */
+  ta.addEventListener('focus', avvia, { once: true });
+  ta.addEventListener('pointerdown', avvia, { once: true });
+  bar.addEventListener('pointerdown', avvia, { once: true });
+  out.addEventListener('pointerdown', avvia, { once: true });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (voci) {
+      voci.forEach(function (v) { if (v.isIntersecting) { io.disconnect(); avvia(); } });
+    }, { rootMargin: '200px' });
+    io.observe(document.getElementById('prova-mermaid'));
+  }
 })();
 </script>
 
