@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrea Guarnieri — Curriculum Vitae</title>
+<meta name="description" content="Curriculum di Andrea Guarnieri, sviluppatore software full-stack: JavaScript/TypeScript, Python, React/Next.js, Supabase.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='system-ui'>&#x2699;</text></svg>">
+<style>
+/* CV — due pagine A4. Ctrl+P → «Salva come PDF».
+   Testo vero, niente colonne, niente tabelle di layout: leggibile dagli ATS. */
+:root { --ink:#16150f; --soft:#45423b; --faint:#78746a; --line:#d9d5c9; --accent:#8f4b09; --bg:#fff; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: #edeae1; color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Roboto, Arial, sans-serif;
+  font-size: 9.7pt; line-height: 1.4; -webkit-font-smoothing: antialiased;
+}
+.sheet { background: var(--bg); max-width: 210mm; margin: 0 auto; padding: 13mm 15mm; box-shadow: 0 2px 24px rgba(0,0,0,.14); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1 { font-size: 19pt; line-height: 1.05; margin: 0 0 2px; letter-spacing: -.022em; }
+.role { font-size: 10.4pt; color: var(--accent); font-weight: 600; margin: 0 0 6px; }
+.contact { font-size: 8.8pt; color: var(--soft); margin: 0; line-height: 1.5; }
+.sep { color: var(--line); padding: 0 5px; }
+
+h2 { font-size: 8.7pt; letter-spacing: .13em; text-transform: uppercase; color: var(--accent);
+     border-bottom: 1.2px solid var(--line); padding-bottom: 3px; margin: 13px 0 7px; }
+h2 .hint { text-transform: none; letter-spacing: 0; color: var(--faint); font-weight: 400; }
+p { margin: 0 0 5px; }
+.lead { color: var(--soft); }
+ul { margin: 2px 0 5px; padding-left: 15px; }
+li { margin-bottom: 1px; }
+strong { font-weight: 650; }
+code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92em; }
+
+.row { margin-bottom: 7px; break-inside: avoid; }
+.row .t { font-weight: 650; font-size: 10pt; line-height: 1.3; display: block; }
+.row .t em { font-weight: 400; font-style: normal; color: var(--faint); font-size: 8.8pt; }
+.row p { margin: 1px 0 0; color: var(--soft); }
+.row .stack { font-size: 8.4pt; color: var(--faint); font-family: ui-monospace, Menlo, Consolas, monospace; margin-top: 1px; }
+
+dl.grid { display: grid; grid-template-columns: 86px 1fr; gap: 2px 12px; margin: 0; }
+dl.grid dt { font-weight: 650; color: var(--soft); }
+dl.grid dd { margin: 0; }
+
+.short { display: grid; grid-template-columns: 100px 1fr; gap: 1px 12px; }
+.short div { font-weight: 650; color: var(--soft); }
+.short p { margin: 0 0 3px; color: var(--soft); }
+
+.privacy { font-size: 7.9pt; color: var(--faint); margin-top: 10px; border-top: 1px solid var(--line); padding-top: 5px; }
+.bar { max-width: 210mm; margin: 14px auto 10px; padding: 0 15mm; font-size: 9.4pt; color: #45423b; display: flex; gap: 14px; flex-wrap: wrap; }
+.bar a { color: #8f4b09; }
+
+@media print {
+  body { background: #fff; font-size: 9.9pt; line-height: 1.44; }
+  .sheet { box-shadow: none; max-width: none; padding: 0; margin: 0; }
+  .bar { display: none; }
+  @page { size: A4; margin: 12mm 14mm; }
+  h2, .row .t { break-after: avoid; }
+  a { color: var(--ink); }
+}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <a href="index.html">← Portfolio</a>
+  <a href="cv-en.html">English version →</a>
+  <span>Per il PDF: <strong>Ctrl+P</strong> → «Salva come PDF» → Margini «Predefiniti» → Grafica di sfondo <em>disattivata</em>.</span>
+</div>
+
+<div class="sheet">
+
+<h1>Andrea Guarnieri</h1>
+<p class="role">Sviluppatore Software Full-Stack — JavaScript/TypeScript · Python</p>
+<p class="contact">
+  Macerata (MC), Italia<span class="sep">|</span><strong>Disponibile full-remote</strong><span class="sep">|</span>348 2646695<span class="sep">|</span><a href="mailto:andreaguarnieri71@gmail.com">andreaguarnieri71@gmail.com</a><br>
+  <a href="https://www.linkedin.com/in/andrea-guarnieri-dev">linkedin.com/in/andrea-guarnieri-dev</a><span class="sep">|</span><a href="https://github.com/Andynet1971">github.com/Andynet1971</a><span class="sep">|</span><a href="https://andynet1971.github.io">andynet1971.github.io</a>
+</p>
+
+<h2>Profilo</h2>
+<p class="lead">Sviluppatore full-stack che porta il software <strong>fino in produzione</strong>, non fino al «funziona sul mio computer». Nel 2026 ho progettato, sviluppato e <strong>pubblicato sei prodotti su marketplace pubblici</strong> — Atlassian Marketplace (2 app), Chrome Web Store, Apify Store — superando ogni volta una revisione tecnica e di sicurezza esterna. React/Next.js davanti, Node.js e Python/FastAPI dietro, PostgreSQL e Supabase sotto. La parte che mi interessa di più è quella che non si vede nella demo: <strong>cosa succede quando l'API di terzi risponde male, quando un dato manca, quando un limite di costo viene superato a metà corsa.</strong></p>
+
+<h2>Competenze tecniche</h2>
+<dl class="grid">
+  <dt>Linguaggi</dt><dd>JavaScript (ES2022+), TypeScript, Python 3, SQL, C#</dd>
+  <dt>Frontend</dt><dd>React, Next.js (App Router), Tailwind CSS, shadcn/ui, PWA, HTML5/CSS3/SASS, Angular</dd>
+  <dt>Backend</dt><dd>Node.js, Python/FastAPI, funzioni serverless (Vercel, Supabase Edge), API REST, OAuth 2.0, webhook firmati</dd>
+  <dt>Dati</dt><dd>PostgreSQL (schema, indici, <strong>Row Level Security</strong>, pgvector), Supabase, MongoDB, SQL Server, MySQL</dd>
+  <dt>Piattaforme</dt><dd>Atlassian Forge (Custom UI, resolver, scope), Chrome Manifest V3, Apify SDK, Vercel</dd>
+  <dt>AI applicata</dt><dd>Claude API, RAG con embedding su pgvector, generazione assistita con revisione umana obbligatoria</dd>
+  <dt>Metodo</dt><dd>Git (5 repository attivi), test automatici, backtest con holdout, progettazione per il guasto</dd>
+</dl>
+
+<h2>Prodotti in produzione <span class="hint">— sei, pubblicati nel 2026. Dettaglio tecnico su andynet1971.github.io</span></h2>
+
+<div class="row">
+  <span class="t">Permission Review for Jira <em>— Atlassian Marketplace, pubblicata il 10 set 2026</em></span>
+  <p>App Forge che risponde alla domanda che gli strumenti di audit esistenti non pongono: <strong>quali permessi ha deciso davvero una persona</strong>, e non ereditato dal default. Report unico, esportato in Excel per il revisore esterno. <strong>1º risultato</strong> nella ricerca del Marketplace per il proprio nome, su oltre mille app.</p>
+  <p class="stack">JavaScript · Atlassian Forge · Custom UI · exceljs</p>
+</div>
+
+<div class="row">
+  <span class="t">Mermaid SVG Diagrams — Dark Mode &amp; Zoom for Confluence <em>— Marketplace, 7 set 2026</em></span>
+  <p>Macro che rende i diagrammi Mermaid in <strong>SVG vettoriale</strong> invece che in PNG: zoom, schermo intero, tema scuro. La specifica non l'ho inventata — è scritta nelle recensioni a 1-2 stelle dei concorrenti.</p>
+  <p class="stack">JavaScript · Atlassian Forge · Mermaid.js · SVG — 8.500 righe</p>
+</div>
+
+<div class="row">
+  <span class="t">Faro <em>— web app su commessa, in produzione</em></span>
+  <p>Piattaforma <strong>multi-tenant, mobile-first</strong> per l'assistenza tecnica di una catena di punti vendita: si parte dal sintomo, il ticket si apre solo se l'autonomia non basta, la dashboard misura i <strong>ticket evitati</strong>. Permessi per-utente con ruolo derivato e cascata, registro eventi append-only, AI che propone e non decide.</p>
+  <p class="stack">Next.js · React · Tailwind · PWA · Supabase (Postgres, RLS, Auth, Storage, pgvector) · Vercel UE · Claude API — 25.500 righe, 227 file</p>
+</div>
+
+<div class="row">
+  <span class="t">PromptVault <em>— estensione Chrome, pubblicata sul Chrome Web Store</em></span>
+  <p>Gestore di prompt su 10 siti di AI generativa, con <strong>l'intera filiera a pagamento</strong>: OAuth via <code>chrome.identity.launchWebAuthFlow</code>, abbonamenti Lemon Squeezy in <em>live mode</em>, webhook firmati verso una Supabase Edge Function, piani con quota. Acquisto e rimborso reali collaudati end-to-end.</p>
+  <p class="stack">Manifest V3 · JavaScript · Supabase · Lemon Squeezy · OAuth 2.0 — 6.200 righe</p>
+</div>
+
+<div class="row">
+  <span class="t">Greenhouse, Lever, Ashby &amp; Workday Job Scraper <em>— Apify Store, pubblico</em></span>
+  <p>Legge gli endpoint JSON pubblici di <strong>7 applicant tracking system</strong>: 745 annunci in <strong>~3 secondi</strong>, senza browser né proxy. Il valore è nei guasti: una career page in errore non viene <strong>mai</strong> riportata come «tutto rimosso», e le righe che il tetto di spesa non copre non vengono segnate come viste.</p>
+  <p class="stack">Node.js · Apify SDK · key-value store persistente — a listino 1,50 $ / 1.000 righe</p>
+</div>
+
+<div class="row">
+  <span class="t">Small AI Hub <em>— smallaihub.com, in produzione</em></span>
+  <p>Blog SEO in inglese US: dominio, SSL, GA4, Search Console, sitemap. Pagine <strong>pre-renderizzate staticamente</strong> da un generatore Python con redirect 308 dai vecchi URL — la modifica che ha risolto l'indicizzazione. Un agente scrive una bozza al giorno, io la approvo da un pulsante dentro l'email.</p>
+  <p class="stack">Python · JavaScript · Vercel serverless · SEO tecnica — 24 articoli, 12.700 righe</p>
+</div>
+
+<h2>Progetti tecnici di ricerca</h2>
+<div class="row">
+  <span class="t">Motore di backtest su vent'anni di scommesse calcio <em>— Python</em></span>
+  <p><strong>38.225 partite</strong>, quote reali di ~15 bookmaker, rating Elo e Dixon-Coles online, <strong>19 strategie</strong> (2 di controllo), <strong>291.248 scommesse simulate</strong>. Taratura / validazione / <strong>holdout guardato una volta sola</strong>, test automatico anti-contaminazione, Benjamini-Hochberg sul confronto multiplo. <strong>Il risultato è negativo e l'ho scritto:</strong> nessuna strategia supera i controlli, e i tre motori che vincono più spesso — fino al 90,7% — perdono tutti soldi.</p>
+</div>
+
+<div class="row">
+  <span class="t">Apify Watchdog <em>— sorveglianza di un prodotto pubblicato</em></span>
+  <p>Il monitoraggio era verde tutti i giorni; misurando come finivano le esecuzioni <em>degli altri</em>: 1 riuscita, <strong>6 in timeout</strong>. Il verdetto che conta non è «esecuzione fallita» ma <code>thin</code>: corsa riuscita che produce molto meno del solito — l'aspetto che ha un portale rotto in silenzio.</p>
+</div>
+
+<h2>Esperienza professionale</h2>
+
+<div class="row">
+  <span class="t">Sviluppatore software indipendente — Softyways <em>| 2026 – oggi | Macerata, da remoto</em></span>
+  <p>Prodotti propri sui marketplace Atlassian, Chrome e Apify, dal primo commit al supporto clienti: ricerca di mercato con dati misurati, architettura, sviluppo, revisione di sicurezza, documentazione, sorveglianza in produzione. In parallelo, sviluppo su commessa (progetto <strong>Faro</strong>).</p>
+</div>
+
+<div class="row">
+  <span class="t">Sviluppatore Software — Assicura Point Trade S.r.l. <em>| 2025</em></span>
+  <ul>
+    <li>Servizi REST e logiche applicative in <strong>Python / FastAPI</strong> per la gestione di flussi assicurativi</li>
+    <li>Progettazione e modellazione dei dati, gestione dello stato applicativo</li>
+    <li>Orchestrazione di catene di chiamate HTTP verso portali assicurativi terzi: sessioni, parsing, normalizzazione, e integrazione in un portale interno di preventivazione</li>
+  </ul>
+</div>
+
+<div class="row">
+  <span class="t">Supporto alla docenza, percorso Full-Stack Developer — EPICODE <em>| 2024</em></span>
+  <p>Affiancamento degli studenti sui progetti web: C#, ASP.NET, JavaScript, SQL, debugging e revisione del codice.</p>
+</div>
+
+<div class="short">
+  <div>2007 – 2024</div><p><strong>Tecnico informatico e consulente</strong> — libero professionista, Meeting Informatica, poi reparto Informatica UNIEURO e TRONY. Assistenza hardware e software, sistemi e reti locali di piccole aziende, artigiani e privati.</p>
+  <div>1997 – 2007</div><p><strong>Titolare di attività commerciale</strong> — San Severino Marche. Gestione operativa e amministrativa, fornitori, infrastruttura informatica e sistemi di cassa.</p>
+</div>
+
+<h2>Formazione e lingue</h2>
+<div class="short">
+  <div>2024</div><p><strong>Full-Stack Developer — EPICODE</strong>, 1000 ore. Backend C#, ASP.NET, Python · Frontend JavaScript, Angular, React · Database SQL.</p>
+  <div>1990 – 1992</div><p><strong>Ingegneria Informatica</strong> — Università Politecnica delle Marche, Ancona (2 anni frequentati). <strong>1990</strong>: Diploma di Perito Informatico, ITIS San Severino Marche.</p>
+  <div>Inglese</div><p><strong>Competenza professionale nello scritto tecnico</strong>: prodotti, documentazione, privacy e security policy scritti in inglese US; gestite in inglese tre revisioni Atlassian e la corrispondenza tecnica con il supporto Etsy. Lettura fluente; conversazione in miglioramento attivo.</p>
+</div>
+
+<p class="privacy">Autorizzo il trattamento dei dati personali ai sensi del D.Lgs. 196/2003 e del Regolamento UE 2016/679.</p>
+
+</div>
+</body>
+</html>

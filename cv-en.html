@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrea Guarnieri — Résumé</title>
+<meta name="description" content="Andrea Guarnieri — full-stack developer: JavaScript/TypeScript, Python, React/Next.js, Supabase. Six products shipped to public marketplaces in 2026.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='system-ui'>&#x2699;</text></svg>">
+<style>
+/* Résumé — two A4 pages. Ctrl+P → "Save as PDF".
+   Real text, no columns, no layout tables: ATS-readable. */
+:root { --ink:#16150f; --soft:#45423b; --faint:#78746a; --line:#d9d5c9; --accent:#8f4b09; --bg:#fff; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: #edeae1; color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Roboto, Arial, sans-serif;
+  font-size: 9.7pt; line-height: 1.4; -webkit-font-smoothing: antialiased;
+}
+.sheet { background: var(--bg); max-width: 210mm; margin: 0 auto; padding: 13mm 15mm; box-shadow: 0 2px 24px rgba(0,0,0,.14); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1 { font-size: 19pt; line-height: 1.05; margin: 0 0 2px; letter-spacing: -.022em; }
+.role { font-size: 10.4pt; color: var(--accent); font-weight: 600; margin: 0 0 6px; }
+.contact { font-size: 8.8pt; color: var(--soft); margin: 0; line-height: 1.5; }
+.sep { color: var(--line); padding: 0 5px; }
+
+h2 { font-size: 8.7pt; letter-spacing: .13em; text-transform: uppercase; color: var(--accent);
+     border-bottom: 1.2px solid var(--line); padding-bottom: 3px; margin: 13px 0 7px; }
+h2 .hint { text-transform: none; letter-spacing: 0; color: var(--faint); font-weight: 400; }
+p { margin: 0 0 5px; }
+.lead { color: var(--soft); }
+ul { margin: 2px 0 5px; padding-left: 15px; }
+li { margin-bottom: 1px; }
+strong { font-weight: 650; }
+code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92em; }
+
+.row { margin-bottom: 7px; break-inside: avoid; }
+.row .t { font-weight: 650; font-size: 10pt; line-height: 1.3; display: block; }
+.row .t em { font-weight: 400; font-style: normal; color: var(--faint); font-size: 8.8pt; }
+.row p { margin: 1px 0 0; color: var(--soft); }
+.row .stack { font-size: 8.4pt; color: var(--faint); font-family: ui-monospace, Menlo, Consolas, monospace; margin-top: 1px; }
+
+dl.grid { display: grid; grid-template-columns: 86px 1fr; gap: 2px 12px; margin: 0; }
+dl.grid dt { font-weight: 650; color: var(--soft); }
+dl.grid dd { margin: 0; }
+
+.short { display: grid; grid-template-columns: 100px 1fr; gap: 1px 12px; }
+.short div { font-weight: 650; color: var(--soft); }
+.short p { margin: 0 0 3px; color: var(--soft); }
+
+.bar { max-width: 210mm; margin: 14px auto 10px; padding: 0 15mm; font-size: 9.4pt; color: #45423b; display: flex; gap: 14px; flex-wrap: wrap; }
+.bar a { color: #8f4b09; }
+
+@media print {
+  body { background: #fff; font-size: 9.9pt; line-height: 1.44; }
+  .sheet { box-shadow: none; max-width: none; padding: 0; margin: 0; }
+  .bar { display: none; }
+  @page { size: A4; margin: 12mm 14mm; }
+  h2, .row .t { break-after: avoid; }
+  a { color: var(--ink); }
+}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <a href="index.html">← Portfolio</a>
+  <a href="cv.html">Versione italiana →</a>
+  <span>For the PDF: <strong>Ctrl+P</strong> → "Save as PDF" → default margins → background graphics <em>off</em>.</span>
+</div>
+
+<div class="sheet">
+
+<h1>Andrea Guarnieri</h1>
+<p class="role">Full-Stack Software Developer — JavaScript/TypeScript · Python</p>
+<p class="contact">
+  Macerata, Italy (CET)<span class="sep">|</span><strong>Available for full-remote work</strong><span class="sep">|</span>+39 348 264 6695<span class="sep">|</span><a href="mailto:andreaguarnieri71@gmail.com">andreaguarnieri71@gmail.com</a><br>
+  <a href="https://www.linkedin.com/in/andrea-guarnieri-dev">linkedin.com/in/andrea-guarnieri-dev</a><span class="sep">|</span><a href="https://github.com/Andynet1971">github.com/Andynet1971</a><span class="sep">|</span><a href="https://andynet1971.github.io">andynet1971.github.io</a>
+</p>
+
+<h2>Profile</h2>
+<p class="lead">Full-stack developer who ships software <strong>all the way to production</strong>, not to a demo. In 2026 I designed, built and <strong>published six products on public marketplaces</strong> — two Atlassian Marketplace apps, a Chrome Web Store extension, an Apify Actor — each one through an external technical and security review. React/Next.js at the front, Node.js and Python/FastAPI behind, PostgreSQL and Supabase underneath. What interests me most is the part a demo never shows: <strong>what happens when a third-party API answers badly, when data is missing, when a cost limit runs out mid-run.</strong></p>
+
+<h2>Technical skills</h2>
+<dl class="grid">
+  <dt>Languages</dt><dd>JavaScript (ES2022+), TypeScript, Python 3, SQL, C#</dd>
+  <dt>Frontend</dt><dd>React, Next.js (App Router), Tailwind CSS, shadcn/ui, PWA, HTML5/CSS3/SASS, Angular</dd>
+  <dt>Backend</dt><dd>Node.js, Python/FastAPI, serverless functions (Vercel, Supabase Edge), REST APIs, OAuth 2.0, signed webhooks</dd>
+  <dt>Data</dt><dd>PostgreSQL (schema design, indexes, <strong>Row Level Security</strong>, pgvector), Supabase, MongoDB, SQL Server, MySQL</dd>
+  <dt>Platforms</dt><dd>Atlassian Forge (Custom UI, resolvers, scopes), Chrome Manifest V3, Apify SDK, Vercel</dd>
+  <dt>Applied AI</dt><dd>Claude API, RAG with embeddings on pgvector, assisted generation with mandatory human review</dd>
+  <dt>Practice</dt><dd>Git (5 active repositories), automated tests, backtesting with a held-out set, designing for failure and partial state</dd>
+</dl>
+
+<h2>Products in production <span class="hint">— six, shipped in 2026. Technical detail at andynet1971.github.io</span></h2>
+
+<div class="row">
+  <span class="t">Permission Review for Jira <em>— Atlassian Marketplace, published 10 Sep 2026</em></span>
+  <p>A Forge app that answers the question existing audit tools do not ask: <strong>which permissions a person actually decided</strong>, rather than inherited from the default. One report, exported to Excel for the external auditor. <strong>First result</strong> in Marketplace search for its own name, out of more than a thousand apps.</p>
+  <p class="stack">JavaScript · Atlassian Forge · Custom UI · exceljs</p>
+</div>
+
+<div class="row">
+  <span class="t">Mermaid SVG Diagrams — Dark Mode &amp; Zoom for Confluence <em>— Marketplace, 7 Sep 2026</em></span>
+  <p>A macro that renders Mermaid diagrams as <strong>vector SVG</strong> instead of PNG: zoom, full screen, dark theme. I did not invent the spec — it is written in the competitors' 1- and 2-star reviews.</p>
+  <p class="stack">JavaScript · Atlassian Forge · Mermaid.js · SVG — 8,500 lines</p>
+</div>
+
+<div class="row">
+  <span class="t">Faro <em>— client project, in production</em></span>
+  <p>A <strong>multi-tenant, mobile-first</strong> support platform for a retail chain: you start from the symptom, a ticket is opened only when self-service is not enough, and the dashboard measures <strong>tickets avoided</strong>. Per-user permissions with derived roles and cascading scope, append-only event log, AI that proposes and never decides.</p>
+  <p class="stack">Next.js · React · Tailwind · PWA · Supabase (Postgres, RLS, Auth, Storage, pgvector) · Vercel EU · Claude API — 25,500 lines, 227 files</p>
+</div>
+
+<div class="row">
+  <span class="t">PromptVault <em>— Chrome extension, published on the Chrome Web Store</em></span>
+  <p>A prompt manager across 10 generative-AI sites, with <strong>the whole billing chain</strong> behind it: OAuth through <code>chrome.identity.launchWebAuthFlow</code>, Lemon Squeezy subscriptions in live mode, signed webhooks into a Supabase Edge Function, quota-based tiers. Real purchase and refund tested end to end.</p>
+  <p class="stack">Manifest V3 · JavaScript · Supabase · Lemon Squeezy · OAuth 2.0 — 6,200 lines</p>
+</div>
+
+<div class="row">
+  <span class="t">Greenhouse, Lever, Ashby &amp; Workday Job Scraper <em>— Apify Store, public</em></span>
+  <p>Reads the public JSON endpoints of <strong>7 applicant tracking systems</strong>: 745 postings in <strong>about 3 seconds</strong>, no browser, no proxies. The value is in the failure handling — a career page that errors is <strong>never</strong> reported as "everything removed", and rows the cost limit could not pay for are not recorded as seen.</p>
+  <p class="stack">Node.js · Apify SDK · persistent key-value store — listed at $1.50 per 1,000 rows</p>
+</div>
+
+<div class="row">
+  <span class="t">Small AI Hub <em>— smallaihub.com, in production</em></span>
+  <p>SEO blog in US English: domain, SSL, GA4, Search Console, sitemap. Article pages are <strong>statically pre-rendered</strong> by a Python generator, with 308 redirects from the old query-string URLs — the change that fixed indexing. An agent writes one draft a day; I approve or discard it from a button inside the email.</p>
+  <p class="stack">Python · JavaScript · Vercel serverless · technical SEO — 24 articles, 12,700 lines</p>
+</div>
+
+<h2>Research projects</h2>
+<div class="row">
+  <span class="t">Football betting backtesting engine <em>— Python</em></span>
+  <p><strong>38,225 matches</strong>, real odds from ~15 bookmakers, Elo and online Dixon-Coles ratings, <strong>19 strategies</strong> (2 of them controls), <strong>291,248 simulated bets</strong>. Train / validation / <strong>holdout looked at exactly once</strong>, an automated leakage test, Benjamini-Hochberg correction for multiple comparisons. <strong>The result is negative and I wrote it down:</strong> no strategy survives the controls, and the three that win most often — up to 90.7% of bets — all lose money.</p>
+</div>
+
+<div class="row">
+  <span class="t">Apify Watchdog <em>— monitoring a published product</em></span>
+  <p>Monitoring was green every single day. Measuring how <em>other people's</em> runs ended: 1 succeeded, <strong>6 timed out</strong>. The verdict that matters is not "run failed" but <code>thin</code>: a successful run that produced far less than usual — which is what a silently broken source looks like.</p>
+</div>
+
+<h2>Experience</h2>
+
+<div class="row">
+  <span class="t">Independent Software Developer — Softyways <em>| 2026 – present | Macerata, Italy · remote</em></span>
+  <p>My own products on the Atlassian, Chrome and Apify marketplaces, from first commit to customer support: market research from measured data, architecture, development, security review, documentation, production monitoring. In parallel, client work (project <strong>Faro</strong>).</p>
+</div>
+
+<div class="row">
+  <span class="t">Software Developer — Assicura Point Trade S.r.l. <em>| 2025</em></span>
+  <ul>
+    <li>REST services and application logic in <strong>Python / FastAPI</strong> for insurance quote workflows</li>
+    <li>Data modelling and application state management</li>
+    <li>Orchestration of complex HTTP call chains against third-party insurance portals: session handling, parsing, normalization, and integration into an internal quoting portal</li>
+  </ul>
+</div>
+
+<div class="row">
+  <span class="t">Teaching Assistant, Full-Stack Developer programme — EPICODE <em>| 2024</em></span>
+  <p>Supporting students on web projects: C#, ASP.NET, JavaScript, SQL, debugging and code review.</p>
+</div>
+
+<div class="short">
+  <div>2007 – 2024</div><p><strong>IT technician and consultant</strong> — self-employed, Meeting Informatica, then the IT departments of UNIEURO and TRONY. Hardware and software support, systems and local networks for small businesses and individuals.</p>
+  <div>1997 – 2007</div><p><strong>Owner, retail business</strong> — San Severino Marche, Italy. Full operational and administrative responsibility, suppliers, IT infrastructure and point-of-sale systems.</p>
+</div>
+
+<h2>Education and languages</h2>
+<div class="short">
+  <div>2024</div><p><strong>Full-Stack Developer — EPICODE</strong>, 1,000 hours. Backend C#, ASP.NET, Python · Frontend JavaScript, Angular, React · SQL databases.</p>
+  <div>1990 – 1992</div><p><strong>Computer Engineering</strong> — Università Politecnica delle Marche, Ancona (2 years). <strong>1990</strong>: Diploma in Computer Science, ITIS San Severino Marche.</p>
+  <div>Languages</div><p><strong>Italian</strong> — native. <strong>English</strong> — <strong>professional working proficiency in writing</strong>: my products, their documentation, privacy and security policies and store listings are all written in US English, and I handled three Atlassian app reviews and technical correspondence with Etsy support in English. Fluent technical reading. Spoken English is intermediate and actively improving — I work best with teams where most communication is written.</p>
+</div>
+
+</div>
+</body>
+</html>
