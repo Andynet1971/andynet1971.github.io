@@ -90,7 +90,7 @@ dl.grid dd { margin: 0; }
   <dt>Data</dt><dd>PostgreSQL (schema design, indexes, <strong>Row Level Security</strong>, pgvector), Supabase, MongoDB, SQL Server, MySQL</dd>
   <dt>Platforms</dt><dd>Atlassian Forge (Custom UI, resolvers, scopes), Chrome Manifest V3, Apify SDK, Vercel</dd>
   <dt>Applied AI</dt><dd>Claude API, RAG with embeddings on pgvector, assisted generation with mandatory human review</dd>
-  <dt>Practice</dt><dd>Git (5 active repositories), automated tests, backtesting with a held-out set, designing for failure and partial state</dd>
+  <dt>Practice</dt><dd>Git, tests (Vitest, Playwright), GitHub Actions CI, Docker, AWS deploys, designing for failure</dd>
 </dl>
 
 <h2>Products in production <span class="hint">— six, shipped in 2026. Technical detail at andynet1971.github.io</span></h2>
@@ -131,20 +131,17 @@ dl.grid dd { margin: 0; }
   <p class="stack">Python · JavaScript · Vercel serverless · technical SEO — 24 articles, 12,700 lines</p>
 </div>
 
-<h2>Research projects and open-source contributions</h2>
+<h2>Open-source projects and contributions</h2>
+
+<div class="row">
+  <span class="t"><a href="https://github.com/Andynet1971/greenlie">Greenlie</a> — open-source status page for silent failures <em>— Sep 2026, <a href="https://greenlie.18-159-116-161.sslip.io">live demo</a></em></span>
+  <p>Born from a real outage: my scraper's monitoring was green every day while <strong>6 of 7</strong> customer runs timed out. Greenlie also asks "<strong>is it answering like it usually does?</strong>": <code>thin</code> is a <code>200</code> carrying far less than the median volume, and failed runs never enter the baseline. The demo watches my own products in production.</p>
+  <p class="stack">TypeScript strict · Next.js · PostgreSQL · Vitest + Playwright (224 tests) · GitHub Actions · Docker · AWS</p>
+</div>
 
 <div class="row">
   <span class="t">Contribution to <a href="https://github.com/mermaid-js/mermaid/issues/5676">mermaid-js/mermaid</a> <em>— Sep 2026</em></span>
   <p>Inside a <code>display:none</code> subtree the renderer produces a <strong>16 px</strong> SVG and never recovers. The point: <strong>at the API level the failure is indistinguishable from success</strong>, which is why it reaches end users. Four conditions measured, filed on a two-year-old issue with no replies.</p>
-</div>
-<div class="row">
-  <span class="t">Football betting backtesting engine <em>— Python</em></span>
-  <p><strong>38,225 matches</strong>, real odds from ~15 bookmakers, Elo and online Dixon-Coles ratings, <strong>19 strategies</strong> (2 of them controls), <strong>291,248 simulated bets</strong>. Train / validation / <strong>holdout looked at exactly once</strong>, an automated leakage test, Benjamini-Hochberg correction for multiple comparisons. <strong>The result is negative and I wrote it down:</strong> no strategy survives the controls, and the three that win most often — up to 90.7% of bets — all lose money.</p>
-</div>
-
-<div class="row">
-  <span class="t">Apify Watchdog <em>— monitoring a published product</em></span>
-  <p>Monitoring was green every single day. Measuring how <em>other people's</em> runs ended: 1 succeeded, <strong>6 timed out</strong>. The verdict that matters is not "run failed" but <code>thin</code>: a successful run that produced far less than usual — which is what a silently broken source looks like.</p>
 </div>
 
 <h2>Experience</h2>

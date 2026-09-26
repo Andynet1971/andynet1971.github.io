@@ -91,7 +91,7 @@ dl.grid dd { margin: 0; }
   <dt>Dati</dt><dd>PostgreSQL (schema, indici, <strong>Row Level Security</strong>, pgvector), Supabase, MongoDB, SQL Server, MySQL</dd>
   <dt>Piattaforme</dt><dd>Atlassian Forge (Custom UI, resolver, scope), Chrome Manifest V3, Apify SDK, Vercel</dd>
   <dt>AI applicata</dt><dd>Claude API, RAG con embedding su pgvector, generazione assistita con revisione umana obbligatoria</dd>
-  <dt>Metodo</dt><dd>Git (5 repository attivi), test automatici, backtest con holdout, progettazione per il guasto</dd>
+  <dt>Metodo</dt><dd>Git, test (Vitest, Playwright), CI GitHub Actions, Docker, deploy su AWS, progettazione per il guasto</dd>
 </dl>
 
 <h2>Prodotti in produzione <span class="hint">— sei, pubblicati nel 2026. Dettaglio tecnico su andynet1971.github.io</span></h2>
@@ -132,20 +132,17 @@ dl.grid dd { margin: 0; }
   <p class="stack">Python · JavaScript · Vercel serverless · SEO tecnica — 24 articoli, 12.700 righe</p>
 </div>
 
-<h2>Progetti di ricerca e contributi open source</h2>
+<h2>Progetti e contributi open source</h2>
+
+<div class="row">
+  <span class="t"><a href="https://github.com/Andynet1971/greenlie">Greenlie</a> — status page open source per i guasti silenziosi <em>— set 2026, <a href="https://greenlie.18-159-116-161.sslip.io">demo dal vivo</a></em></span>
+  <p>Nata da un guasto vero: il monitoraggio del mio scraper era verde ogni giorno, e <strong>6 esecuzioni su 7</strong> degli utenti finivano in timeout. Greenlie chiede anche «<strong>risponde come al solito?</strong>»: <code>thin</code> è un <code>200</code> con molto meno volume della mediana, e i run in guasto non entrano mai nella baseline. La demo sorveglia i miei prodotti in produzione.</p>
+  <p class="stack">TypeScript strict · Next.js · PostgreSQL · Vitest + Playwright (224 test) · GitHub Actions · Docker · AWS</p>
+</div>
 
 <div class="row">
   <span class="t">Contributo a <a href="https://github.com/mermaid-js/mermaid/issues/5676">mermaid-js/mermaid</a> <em>— set 2026</em></span>
   <p>Dentro un sottoalbero <code>display:none</code> il renderer produce un SVG da <strong>16 px</strong> e non si riprende più. Il punto: <strong>a livello di API il fallimento è indistinguibile dal successo</strong>, ed è per questo che arriva all'utente. Quattro condizioni misurate, su una issue aperta da due anni e senza risposte.</p>
-</div>
-<div class="row">
-  <span class="t">Motore di backtest su vent'anni di scommesse calcio <em>— Python</em></span>
-  <p><strong>38.225 partite</strong>, quote reali di ~15 bookmaker, rating Elo e Dixon-Coles online, <strong>19 strategie</strong> (2 di controllo), <strong>291.248 scommesse simulate</strong>. Taratura / validazione / <strong>holdout guardato una volta sola</strong>, test automatico anti-contaminazione, Benjamini-Hochberg sul confronto multiplo. <strong>Il risultato è negativo e l'ho scritto:</strong> nessuna strategia supera i controlli, e i tre motori che vincono più spesso — fino al 90,7% — perdono tutti soldi.</p>
-</div>
-
-<div class="row">
-  <span class="t">Apify Watchdog <em>— sorveglianza di un prodotto pubblicato</em></span>
-  <p>Il monitoraggio era verde tutti i giorni; misurando come finivano le esecuzioni <em>degli altri</em>: 1 riuscita, <strong>6 in timeout</strong>. Il verdetto che conta non è «esecuzione fallita» ma <code>thin</code>: corsa riuscita che produce molto meno del solito — l'aspetto che ha un portale rotto in silenzio.</p>
 </div>
 
 <h2>Esperienza professionale</h2>
@@ -179,7 +176,7 @@ dl.grid dd { margin: 0; }
   <div>set – dic 2025</div><p><strong>Formazione autonoma intensiva</strong> — Java, React, MongoDB. Il passaggio che ha reso possibili i prodotti del 2026, tutti in JavaScript/TypeScript e React.</p>
   <div>2024</div><p><strong>Full-Stack Developer — EPICODE</strong>, 1000 ore. Backend C#, ASP.NET, Python · Frontend JavaScript, Angular, React · Database SQL.</p>
   <div>1990 – 1992</div><p><strong>Ingegneria Informatica</strong> — Università Politecnica delle Marche, Ancona (2 anni frequentati). <strong>1990</strong>: Diploma di Perito Informatico, ITIS San Severino Marche.</p>
-  <div>Inglese</div><p><strong>Competenza professionale nello scritto tecnico</strong>: prodotti, documentazione, privacy e security policy scritti in inglese US; gestite in inglese tre revisioni Atlassian e la corrispondenza tecnica con il supporto Etsy. Lettura fluente; conversazione in miglioramento attivo.</p>
+  <div>Inglese</div><p><strong>Competenza professionale nello scritto tecnico</strong>: prodotti, documentazione e policy in inglese US; tre revisioni Atlassian e la corrispondenza tecnica con il supporto Etsy gestite in inglese. Lettura fluente; conversazione in miglioramento attivo.</p>
 </div>
 
 <p class="privacy">Autorizzo il trattamento dei dati personali ai sensi del D.Lgs. 196/2003 e del Regolamento UE 2016/679.</p>

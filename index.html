@@ -148,19 +148,9 @@
 <section id="ricerca">
   <div class="wrap">
     <h2>Due progetti che spiegano come lavoro</h2>
-    <p class="section-note">Il primo perché il risultato è negativo e l'ho scritto lo stesso. Il secondo perché ha trovato un guasto che tutti gli allarmi dicevano non esistere.</p>
+    <p class="section-note">Il primo perché ha trovato un guasto che tutti gli allarmi dicevano non esistere. Il secondo è il primo reso pubblico: codice aperto, test, CI e una demo che gira davvero.</p>
 
     <div class="cards">
-
-      <article class="card wide">
-        <span class="status">Ricerca quantitativa · Python</span>
-        <h3>Motore di backtest su vent'anni di scommesse calcio</h3>
-        <p class="punch"><strong>38.225 partite</strong> di cinque campionati europei dal 2005, le quote reali di ~15 bookmaker, <strong>19 strategie</strong> (due delle quali di controllo) e <strong>291.248 scommesse simulate</strong>.</p>
-        <p>Rating Elo e Dixon-Coles ricostruiti online, settimana per settimana. Stagioni divise in taratura, validazione e <strong>holdout guardato una volta sola</strong>. Un test automatico riscrive i risultati dell'ultimo terzo delle partite e verifica che <strong>nessuna feature passata si muova</strong>: la contaminazione è impedita dalla struttura, non da un commento. Le quote di chiusura sono irraggiungibili dalle strategie per costruzione, e servono solo a giudicare dopo. Correzione di Benjamini-Hochberg sul confronto multiplo.</p>
-        <p class="punch">Il risultato è <strong>negativo</strong>, ed è scritto in grassetto nella documentazione: nessuna delle 19 strategie supera i controlli. I tre motori che vincono più spesso — fino al <strong>90,7% di giocate vinte</strong> — perdono tutti soldi. Non esiste una scommessa facile: esiste una scommessa pagata male. <em>Un motore che ti dice di no è più utile di uno che ti dice quello che vuoi sentire.</em></p>
-        <p class="go"><span class="private">Codice privato — volentieri ne parlo in dettaglio</span></p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">NumPy / SciPy</span><span class="tag">Elo</span><span class="tag">Dixon-Coles</span><span class="tag">test anti-leakage</span><span class="tag">Benjamini-Hochberg</span></div>
-      </article>
 
       <article class="card wide">
         <span class="status">Sorveglianza in produzione</span>
@@ -168,8 +158,18 @@
         <p class="punch">Il mio prodotto su Apify aveva il monitoraggio verde. Un giorno ho misurato come finivano le esecuzioni <em>degli altri</em>: <strong>1 riuscita, 6 andate in timeout</strong>. Sei persone avevano pagato il tempo di calcolo per non ricevere nulla, e nessun allarme era mai scattato.</p>
         <p>Il watchdog ricava le esecuzioni di terzi dalla differenza fra statistiche pubbliche e autenticate, e <strong>fissa i contatori quando cambia la build viva</strong>: una finestra a 30 giorni continuerebbe per settimane a dare la colpa alla build nuova per guasti già corretti — e nel frattempo un guasto vero sarebbe invisibile, perché l'allarme è già rosso.</p>
         <p>Il verdetto che conta non è «esecuzione fallita» ma <code>thin</code>: corsa riuscita che ha prodotto molto meno del solito. È l'aspetto che ha <strong>un portale rotto in silenzio</strong>, e un allarme sul solo fallimento non lo vede mai.</p>
-        <p class="go"><span class="private">Strumento interno, non pubblicato</span></p>
+        <p class="go"><span class="private">Strumento interno, non pubblicato — la sua versione generica è Greenlie, qui sotto</span></p>
         <div class="tags"><span class="tag">Node.js</span><span class="tag">Apify SDK</span><span class="tag">alerting</span><span class="tag">osservabilità</span></div>
+      </article>
+
+      <article class="card wide">
+        <span class="status">Open source · demo dal vivo</span>
+        <h3><a href="https://github.com/Andynet1971/greenlie" rel="noopener">Greenlie — il watchdog, generalizzato e pubblico</a></h3>
+        <p class="punch"><em>«Your monitoring is green. Is it lying?»</em> Una status page che oltre a «risponde?» chiede <strong>«risponde come al solito?»</strong>. Un servizio che restituisce <code>200 OK</code> con un decimo del contenuto abituale non è su: è un guasto silenzioso.</p>
+        <p>Il verdetto <code>thin</code> confronta il volume di ogni risposta con la <strong>mediana delle ultime esecuzioni sane</strong>. I run in guasto non entrano mai nella baseline — filtrati nella query stessa — altrimenti un guasto abbastanza lungo diventerebbe «il solito» e l'allarme si spegnerebbe da solo. Avvisi solo sui cambi di stato, con una conferma contro lo sfarfallio; battiti per i job pianificati.</p>
+        <p>Monorepo TypeScript <code>strict</code>: nucleo puro coperto al 100% con la soglia imposta dalla CI, test di integrazione su un Postgres vero, end-to-end Playwright con axe in tema chiaro e scuro. GitHub Actions costruisce le immagini Docker, le prova con uno smoke test e le pubblica. La demo gira su AWS Lightsail e <strong>sorveglia i prodotti qui sopra</strong>.</p>
+        <p class="go"><a href="https://greenlie.18-159-116-161.sslip.io" rel="noopener">Apri la demo dal vivo</a><a href="https://github.com/Andynet1971/greenlie" rel="noopener">Codice su GitHub</a></p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">PostgreSQL + Drizzle</span><span class="tag">Vitest</span><span class="tag">Playwright</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span><span class="tag">AWS Lightsail</span><span class="tag">MIT</span></div>
       </article>
 
     </div>
@@ -187,7 +187,7 @@
       <div class="skill-row"><dt>Dati</dt><dd>PostgreSQL (schema, indici, Row Level Security, pgvector), Supabase, MongoDB, SQL Server, MySQL</dd></div>
       <div class="skill-row"><dt>Piattaforme</dt><dd>Atlassian Forge, Chrome Manifest V3, Apify SDK, Vercel, GitHub Pages</dd></div>
       <div class="skill-row"><dt>AI applicata</dt><dd>Claude API, RAG con embedding su pgvector, generazione assistita con revisione umana obbligatoria</dd></div>
-      <div class="skill-row"><dt>Metodo</dt><dd>Git su cinque repository attivi, test automatici, backtest con holdout, progettazione per il guasto e per gli stati parziali</dd></div>
+      <div class="skill-row"><dt>Metodo</dt><dd>Git, test automatici (Vitest, Playwright), CI su GitHub Actions, Docker, deploy su AWS, progettazione per il guasto e per gli stati parziali</dd></div>
     </dl>
   </div>
 </section>
